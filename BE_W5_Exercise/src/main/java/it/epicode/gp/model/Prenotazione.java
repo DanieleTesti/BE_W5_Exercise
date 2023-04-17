@@ -37,7 +37,6 @@ public class Prenotazione {
 	@JoinColumn(nullable = false)
 	private Postazione postazione;
 
-	// da modificare
 	@Column(nullable = false)
 	private LocalDate dataPrenotazione;
 }
