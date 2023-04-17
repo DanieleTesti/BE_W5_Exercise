@@ -32,8 +32,8 @@ public class PostazioneConfig {
 	public Postazione randomPostazione(Edificio e) {
 		Faker fake = Faker.instance(new Locale("it-IT"));
 		Postazione p = new Postazione();
-		p.setDescrizione("Descrizione: "+fake.number().numberBetween(1, 500));
-		p.setNMaxOccupanti(fake.number().numberBetween(5, 50));
+		p.setDescrizione("Description: "+fake.number().numberBetween(1, 50));
+		p.setNMaxOccupanti(fake.number().numberBetween(5, 30));
 		p.setStatoPostazione(StatoPostazione.LIBERO);
 		int randN = (int) ((Math.random()*3)+1);
 		switch (randN) {
